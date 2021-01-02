@@ -1,9 +1,136 @@
+@font-face {
+    font-family: bebas; 
+    src: url(BebasNeue-Regular.woff); 
+}
+
+@font-face {
+    font-family: oswald; 
+    src: url(fonts/static/Oswald-Regular.ttf); 
+}
+
+@font-face {
+    font-family: oswald-bold; 
+    src: url(fonts/static/Oswald-Bold.ttf); 
+}
+
+.bielarski-header {
+    margin-bottom: 0; 
+    padding-top: 45px; 
+    padding-bottom: 0;
+}
+
+body {
+    font-family: oswald; 
+    letter-spacing: .02em; 
+    min-height: 100vh; 
+    width: 70vw; 
+    margin: auto; 
+}
+
+.bold-header {
+    font-family: oswald-bold; 
+}
+
+.navbar {
+    margin-bottom: 30px; 
+    padding: 8px 0; 
+}
+
+.toggler-colors {
+    border-color: #808080; 
+    background-color: #000 !important;
+}
+
+.container-div {
+    min-height: calc(100vh - 70px); 
+    height: 100%; 
+}
+
+.center-content {
+    text-align: center; 
+}
+
+.page-body {
+    margin: 0 auto; 
+    font-size: 1.15em; 
+}
+
+.personal-photo {
+    width: 37%; 
+    float: left;
+}
+
+.personal-content {
+    width: 60%; 
+    float: right;
+}
+
+.title {
+    text-align: center; 
+}
+
+.footer, .push {
+    height: 10px; 
+    float: right;
+    margin: 30px 0 10px; 
+}
+
+h1 {
+    font-family: bebas; 
+    font-size: 4em; 
+}
+
+li.nav-item {
+    font-family: bebas;
+    font-size: 1.5em; 
+}
+
 .dark-bg-white-text {
     background-color: #000; 
     color: #fff; 
 }
 
 a, a:hover {
-    text-decoration: none; 
+    text-decoration: none;
+}
+
+.navbar a, .navbar a:hover, .bielarski-header a, .bielarski-header a:hover {
     color: #fff; 
+}
+
+hr {
+    background-color: #fff; 
+}
+
+hr.spacer {
+    width: 25vw; 
+}
+
+.resume-body {
+    width: 50vw; 
+}
+
+@media only screen and (max-width: 650px) {
+    body {
+        width: 90%; 
+        margin: 0 5%; 
+    }
+
+    .personal-photo {
+        margin-top: 20px; 
+        width: 100%; 
+        float: none;
+    }
+    
+    .personal-content {
+        width: 100%; 
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 1175px) {
+    .resume-body {
+        width: 100%; 
+        margin: auto; 
+    }
 }

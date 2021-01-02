@@ -1,11 +1,60 @@
-<div><a href="album-crud.html">Album management CRUD application</a></div>
-<div>
-    This is a simple CRUD application for managing a list of albums, featuring the artist or band name, album name, genre and release year. I've loaded some random albums that I love here. Feel free to add your own, correct any mistakes you see on those that are currently showing or delete any albums you hate. 
-</div>
-<div>
-    The backend is written in Java and Spring using the MVC design pattern with Amazon DynamoDB as the database. The frontend is written in React using Axios as the HTTP client. The source code is available <a href="https://github.com/sodapopcurtis/album_crud_complete" target="_BLANK">here</a>. 
-</div>
-<div><a href="https://www.ernestmontenegro.com" target="_BLANK">Website for artist Ernest Montenegro</a></div>
-<div>
-    This is a website for acclaimed American artist Ernest Montenegro. It is an entirely custom site written using a custom WordPress template. 
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="style.css" rel="stylesheet">
+        <title>Portfolio</title>
+    </head>
+    <body class="dark-bg-white-text">
+        <div class="container-div">
+            <div class="jumbotron text-center dark-bg-white-text bielarski-header">
+                <h1><a href="index.html">TREVOR BIELARSKI</a></h1>
+            </div>
+        
+            <nav class="navbar navbar-expand-sm">
+                <div class="container">
+                    <button class="navbar-toggler justify-content-end navbar-dark bg-dark toggler-colors" style="" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false"> 
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav" style="margin: auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item mx-">
+                                <a class="nav-link" href="resume.html">Résumé</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="page-body">
+                <h3><a href="album-crud.html">Album management CRUD application</a></h3>
+                <p>
+                    This is a simple CRUD application for managing a list of albums, including the album name, artist or band name, genre and release year. I've loaded some random albums that I love here. Feel free to add your own, correct any mistakes you see on those that are currently showing or delete any albums you're simply not crazy about. 
+                </p>
+                <p style="margin-bottom: 30px;">
+                    The backend is written in Java and Spring using the MVC design pattern. It is deployed via Elastic Beanstalk and uses DynamoDB as the database. The frontend is written in React using Axios as the HTTP client. The source code is available <a href="https://github.com/trevorbielarski/album_crud_app" target="_BLANK"><b>here</b></a>. 
+                </p>
+                <h3><a href="http://www.ernestmontenegro.com" target="_BLANK">Website for artist Ernest Montenegro</a></h3>
+                <p style="margin-bottom: 30px; ">
+                    This is a website for acclaimed artist Ernest Montenegro. It is an entirely custom site added via a custom WordPress template which I created. 
+                </p>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Copyright 2021 Trevor Bielarski</p>
+        </footer> 
+        
+    </body>
+</html>
