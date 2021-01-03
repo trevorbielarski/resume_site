@@ -1,6 +1,6 @@
 @font-face {
     font-family: bebas; 
-    src: url(BebasNeue-Regular.woff); 
+    src: url(fonts/BebasNeue-Regular.woff); 
 }
 
 @font-face {
@@ -13,6 +13,10 @@
     src: url(fonts/static/Oswald-Bold.ttf); 
 }
 
+html {
+    overflow-y: scroll; 
+}
+
 .bielarski-header {
     margin-bottom: 0; 
     padding-top: 45px; 
@@ -20,7 +24,7 @@
 }
 
 body {
-    font-family: oswald; 
+    font-family: oswald, sans-serif, Arial, Helvetica; 
     letter-spacing: .02em; 
     min-height: 100vh; 
     width: 70vw; 
@@ -28,7 +32,11 @@ body {
 }
 
 .bold-header {
-    font-family: oswald-bold; 
+    font-family: oswald-bold, sans-serif, Arial, Helvetica; 
+}
+
+.navbar-nav {
+    margin: auto; 
 }
 
 .navbar {
@@ -58,11 +66,16 @@ body {
 .personal-photo {
     width: 37%; 
     float: left;
+    margin-right: 20px; 
+}
+
+.mobile-photo {
+    display: none; 
+    width: 100%; 
 }
 
 .personal-content {
-    width: 60%; 
-    float: right;
+    
 }
 
 .title {
@@ -76,12 +89,12 @@ body {
 }
 
 h1 {
-    font-family: bebas; 
+    font-family: bebas, oswald, sans-serif, Arial, Helvetica; 
     font-size: 4em; 
 }
 
 li.nav-item {
-    font-family: bebas;
+    font-family: bebas, oswald, sans-serif, Arial, Helvetica;
     font-size: 1.5em; 
 }
 
@@ -117,9 +130,11 @@ hr.spacer {
     }
 
     .personal-photo {
-        margin-top: 20px; 
-        width: 100%; 
-        float: none;
+        display: none; 
+    }
+
+    .mobile-photo {
+        display: block; 
     }
     
     .personal-content {

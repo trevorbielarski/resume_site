@@ -1,0 +1,16 @@
+Upload React app to Github pages (easy)
+Get 2 pictures of yourself (easy)
+Set up app iframe to dynamically resize
+Upload site
+Clean up backend and frontend code added to Github repo (easy)
+
+1/3: 
+COMPLETE SITE: 
+Redirect domain
+Find good pictures
+Upload app to Github
+Clean up ALL code and upload to Github
+
+STUDY STE INTERVIEW QUESTIONS: 
+Questions from DDC!!! 
+
